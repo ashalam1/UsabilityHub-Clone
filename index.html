@@ -22,7 +22,7 @@
             <a href="#" class="company-logo">
                 <img src="./assets/asset 1.png" alt="company-logo">
             </a>
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-links">Product</a></li>
                     <li><a href="#" class="hover-links">Customer</a></li>
@@ -32,7 +32,7 @@
                     <li><a href="#" class="hover-links primary-button ">Sign up</a></li>
                 </ul>
             </div>
-            <a href="#" class="nav-toggle hover-links "><i class="fa-solid fa-bars"></i></a>
+            <a href="#" class="nav-toggle hover-links " id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
         </div>
     </nav>
     <!---------------------------------------Header section--------------------------------------->
@@ -196,7 +196,7 @@
     </div>
 
     <section class="container main-cards flex">
-        <a href="#" class="card1"
+        <a href="#" class="card1 flex"
             style="background: linear-gradient(rgb(0,0,0,0.1), rgb(0, 0,  0, 0.8)),url(assets/asset\ 36.jpeg);background-size: cover;">
             <h3 class="card-text">Can users complete a tasks in my software interface?</h3>
         </a>
@@ -277,6 +277,14 @@
     </div>
 
     <script src="https://kit.fontawesome.com/2936b5a973.js" crossorigin="anonymous"></script>
+    <script>
+        const toggleButton=document.getElementById('nav-toggle');
+        const navLinks=document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () =>{
+            navLinks.classList.toggle('active');
+        })
+    </script>
 </body>
 
 </html>

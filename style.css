@@ -119,6 +119,7 @@ a {
 .main-nav {
     margin-top: 20px;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-links ul {
@@ -142,12 +143,13 @@ header {
 }
 
 .header-right img {
-    width: 600px;
+    width: 100%;
     margin: 10px;
     padding: 10px;
 }
 
 .header-left {
+    max-width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -164,9 +166,11 @@ header {
     color: var(--primary-text-color);
 }
 
-/* .company-logo{
+.company-logo{
+    justify-content: space-evenly;
     flex-wrap: wrap;
-} */
+    gap: 10px;
+}
 .logos {
     margin: 2px 20px;
 }
@@ -177,7 +181,7 @@ header {
     opacity: 100;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 60px;
+    margin: 50px;
     padding: 10px;
 }
 
@@ -194,16 +198,19 @@ header {
 .big-features {
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
 }
 
 .card {
+    flex-direction: column;
     text-align: center;
+    gap: 20px;
     max-width: 30%;
-    margin: 15px;
 }
 
 .card img {
-    width: 40px;
+    width: 60px;
 }
 
 /* review section */
@@ -259,20 +266,26 @@ header {
 /* Card Section */
 .cards {
     flex-direction: column;
+    gap: 20px;
     margin-top: 70px;
+    
 }
 
 .main-cards {
     justify-content: space-between;
     margin-block: 30px;
+    flex-wrap: wrap;
+ 
 }
 
 .card1 {
     width: 23%;
-    min-height: 300px;
+    height: 300px;
     position: relative;
     background: black;
+    background-size: cover;
     transition: 0.2s ease-out;
+    flex-wrap: wrap;
 }
 
 .card-text {
@@ -329,4 +342,5 @@ footer{
 .subfooter-container{
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
